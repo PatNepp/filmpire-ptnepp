@@ -4,9 +4,8 @@ import { Menu, AccountCircle, Brightness4, Brightness7 } from '@mui/icons-materi
 import { Link } from 'react-router-dom';
 import { useTheme } from '@mui/material/styles';
 
-import { Sidebar } from '..';
-
 import useStyles from './styles';
+import Sidebar from '../Sidebar/Sidebar';
 
 const NavBar = () => {
   const classes = useStyles();
