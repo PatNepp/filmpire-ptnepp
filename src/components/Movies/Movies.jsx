@@ -4,15 +4,14 @@ import { useSelector } from 'react-redux';
 
 import { useGetMoviesQuery } from '../../services/TMDB';
 import MovieList from '../MovieList/MovieList';
+import Loader from '../Loader/Loader';
 
 const Movies = () => {
   const { data, error, isFetching } = useGetMoviesQuery();
 
   if (isFetching) {
     return (
-      <Box display="flex" justifyContent="center">
-        <CircularProgress size="4rem" />
-      </Box>
+      <Loader />
     );
   }
 
