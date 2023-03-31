@@ -123,7 +123,7 @@ const MovieInformation = () => {
         <Typography variant="h3" gutterBottom align="center">
           You Might Also Like
         </Typography>
-        <MovieList movies={recommendations} listType="recommended" />
+        <MovieList movies={recommendations} numOfMovies={8} />
       </Box>
       )}
       <Modal
