@@ -52,7 +52,7 @@ const Sidebar = ({ setMobileOpen }) => {
       <Divider />
       <List>
         <ListSubheader>Genres</ListSubheader>
-        {isFetching ? <Loader />
+        {isFetching ? <Loader size={4} />
           : data.genres.map(({ name, id }) => (
             <Link key={name} className={classes.links} to="/">
               <ListItem onClick={() => dispatch(selectGenreOrCategory(id))}>

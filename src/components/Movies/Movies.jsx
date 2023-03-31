@@ -15,7 +15,7 @@ const Movies = () => {
 
   if (isFetching) {
     return (
-      <Loader />
+      <Loader size={4} />
     );
   }
 
