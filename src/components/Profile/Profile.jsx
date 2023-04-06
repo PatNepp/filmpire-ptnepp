@@ -5,7 +5,6 @@ import { ExitToApp } from '@mui/icons-material';
 
 import { userSelector } from '../../features/auth';
 import { useGetListQuery } from '../../services/TMDB';
-import MovieList from '../MovieList/MovieList';
 import RatedCards from '../RatedCards/RatedCards';
 
 const Profile = () => {
